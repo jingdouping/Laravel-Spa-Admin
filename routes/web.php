@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('adminlogin',[AuthController::class,'adminlogin']);
 
-Route::get('/', function () {
+Route::fallback(function () {
     return view('welcome');
 });
+

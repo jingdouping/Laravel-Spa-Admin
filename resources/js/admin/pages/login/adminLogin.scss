@@ -1,0 +1,49 @@
+.adminlogincontainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: #a6ff8b;
+    background-image: linear-gradient(180deg, #a6ff8b 0%, #f4ffb7 100%);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginwrapper{
+        padding: 20px;
+        width: 25%;
+        background-color: white;
+        border-radius: 5px;
+
+        .logintitle{
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .loginform{
+            display: flex;
+            flex-direction: column;
+
+            .logininput{
+                flex: 1;
+                min-width: 40%;
+                margin:10px 0px;
+                padding: 10px;
+                border: 1.5px solid teal;
+                border-radius: 5px;
+            }
+
+            .loginbutton{
+                width: 80%;
+                border: none;
+                padding: 12px 10px;
+                background-color: teal;
+                color: white;
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
